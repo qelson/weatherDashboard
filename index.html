@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <h1>Weather Dashboard</h1>
+
+  <!-- Search form for cities -->
+  <form id="search-form">
+    <label for="city-input">Enter a city:</label><br>
+    <input type="text" id="city-input" name="city"><br>
+    <input type="submit" value="Search">
+  </form> 
+
+  <!-- Display search history -->
+  <h2>Search History</h2>
+  <ul id="search-history"></ul>
+
+  <!-- Display weather for selected city -->
+  <div id="weather-display">
+    <h2 id="city-name"></h2>
+    <p id="date"></p>
+    <p id="weather-icon"></p>
+  </div>
+
+  <!-- Load openweathermap API -->
+  <script src="https://openweathermap.org/api"></script>
+
+  <!-- Load JavaScript for search functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
